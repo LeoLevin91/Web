@@ -1,0 +1,555 @@
+@import "libs"
+$gold-color: #c7b299
+$button-color: #998675
+
+*
+  padding: 0
+  margin: 0
+
+
+.container
+  padding-top: 20px
+
+
+
+body
+  width: 100vw
+  header
+    height: 100vh //Пофиксить что бы кнопка не выпадала
+    width: 100vw
+    background: linear-gradient(rgba(0,0,0,0.5)), url(../img/photo.png) no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    .container.header
+    .button-header
+      padding-top: 60px
+
+      a
+        background-color: $button-color
+        text-decoration: none
+        font-weight: 600
+        color: white
+        border-radius: 5px
+        padding: 15px 25px 15px 25px
+        &:hover
+          background-color: #736357
+          border-bottom: 1px solid black
+          transition: all 0.5s ease-out 0s
+    .header-text
+      padding-top: 100px
+      color: white
+      .pre-description
+        font-family: sans-serif
+        font-size: 45px
+        font-weight: 200
+        text-align: center
+      .main-text
+        text-align: center
+        font-family: sans-serif
+        font-size: 60px
+        font-weight: 600
+      .description
+        text-align: center
+
+
+    .logo
+      padding-right: 0
+    .logo-text
+      color: white
+      padding-left: 0
+      margin-top: 5px
+      font-size: 30px
+    nav
+      padding-left: 60px
+      margin-top: 15px
+      .menu
+        display: inline
+        margin-top: 15px
+        a
+          color: $gold-color
+        i
+          padding-left: 40px
+          color: white
+
+  section.ourWork
+    padding-top: 20px
+    padding-bottom: 80px
+
+    .row
+      .col-sm-3
+        text-align: center
+        padding-top: 30px
+        i
+          color: #555555
+          font-size: 44px
+          padding-bottom: 30px
+        h3
+          font-size: 22px
+        p
+          padding-top: 12px
+          font-size: 14px
+        div
+          margin-top: 40px
+          margin-left: 40%
+          height: 2px
+          width: 20%
+          background-color: #555
+        &:hover
+          i, h3
+            color: $gold-color
+            transition: all 0.25s ease-out 0s
+          div
+            background-color: $gold-color
+            transition: all 0.5s ease-out 0s
+
+  section.browser
+    background-color: #fbfaf8
+    padding-top: 60px
+    .row
+      h3
+        font-size: 30px
+        text-align: center
+      p
+        color: #8c8c8c
+        padding-bottom: 30px
+        text-align: center
+        font-size: 18px
+        font-family: sans-serif
+      .brow-center
+        z-index: 2
+        margin-right: 20px
+        height: 482px
+        width: 770px
+      .brow-left
+        margin-top: -200px
+        height: 200px
+        position: absolute
+        margin-left: -180px
+        z-index: 1
+      .brow-right
+        position: absolute
+        z-index: 1
+        margin-top: -200px
+        height: 200px
+        margin-left: 180px
+  section.purechase
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+    //height: 100px
+    padding-top: 5px
+    a
+      //position: absolute
+      font-size: 12px
+      font-weight: 600
+      text-align: center
+      display: block
+      background-color: $button-color
+      text-decoration: none
+      color: white
+      border-radius: 5px
+      padding: 15px 15px 15px 15px
+      &:hover
+        background-color: #736357
+        border-bottom: 1px solid black
+        transition: all 0.5s ease-out 0s
+
+    h3
+      color: white
+      span
+        color: $gold-color
+    p
+      color: white
+
+  section.latestProgect
+    padding-top: 60px
+    .row
+      padding-bottom: 30px
+      .button
+        margin-top: 10px
+        text-align: center
+        font-size: 14px
+        font-weight: 600
+        text-decoration: none
+        padding: 10px 25px 10px 25px
+        border-radius: 5px
+        background-color: $button-color
+        color: white
+        &:hover
+          background-color: #736357
+          transition: all 0.5s ease-out 0s
+      h2
+        font-size: 30px
+        text-align: center
+      p
+        color: #8c8c8c
+        padding-bottom: 30px
+        text-align: center
+        font-size: 18px
+        font-family: sans-serif
+    .block
+      position: relative
+      i
+        color: white
+        display: none
+        position: absolute
+        top: 110px
+      .search
+        left: 160px
+      .link
+        left: 192px
+      .opa
+        img
+          width: 350px
+          height: 237px
+      .descriptions
+        position: relative
+        height: 100px
+        background-color: #fbfaf8
+        h5
+          padding-top: 15px
+          margin-left: 10%
+          color: $gold-color
+          font-family: "Apple Color Emoji", sans-serif
+
+        p
+          position: absolute
+          margin-left: 10%
+          color: #8c8c8c
+          font-family: sans-serif
+
+        &:before
+          content: ''
+          position: absolute
+          left: 40px
+          top: -30px
+          border: 15px solid transparent
+          border-bottom: 15px solid #fbfaf8
+      &:hover
+        cursor: pointer
+        .opa
+          background-color: #000
+          img
+            opacity: 0.5
+            transition: all 0.25s ease-out 0s
+        i
+          display: block
+          transition: all 0.25s ease-out 0s
+          &:hover
+            cursor: pointer
+            color: $gold-color
+        .descriptions
+          background-color: #362f2d
+          transition: all 0.25s ease-out 0s
+          &:before
+            border-bottom-color: #362f2d
+            transition: all 0.15s ease-out 0s
+
+  section.videoSection
+    background: linear-gradient(rgba(0,0,0,0.5)), url(../img/p6.png) no-repeat
+    background-size: cover
+    padding-top: 90px
+    h3
+      color: white
+      padding-bottom: 20px
+    p
+      color: white
+    .description1
+      padding-bottom: 20px
+      text-align: center
+    .time
+      color: $gold-color
+      font-weight: 600
+      padding-bottom: 40px
+
+    i
+      padding-bottom: 20px
+      color: white
+      font-size: 80px
+      &:hover
+        color: $gold-color
+        transition: all 0.25s ease-out 0s
+
+  section.handIphone
+    padding-top: 40px
+
+    img
+      width: 400px
+      height: 550px
+    .col-sm-5
+      padding-top: 60px
+      h4
+        color: #555
+        font-size: 30px
+        font-weight: 400
+        padding-bottom: 20px
+      .desc
+        color: #8c8c8c
+        font-size: 16px
+        padding-bottom: 20px
+
+
+      .row.r2
+        margin-left: 40px
+        .itemDesc
+          p
+            line-height: 25px
+            color: #8c8c8c
+            &:before
+              content: '\f144'
+              font-family: Font Awesome\ 5 Free
+              color: #8c8c8c
+              padding-right: 10px
+              font-size: 16px
+            &:hover
+              color: black
+              transition: all 0.25s ease-out 0s
+              &:before
+                color: $gold-color
+                transition: all 0.25s ease-out 0s
+
+  section.stats
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+    color: white
+    padding-bottom: 40px
+    .row
+      .col-sm-2
+        cursor: pointer
+        img
+          padding-left: 35%
+          padding-bottom: 15px
+          padding-top: 30px
+        h2
+          text-align: center
+          padding-bottom: 5px
+        p
+          text-align: center
+          font-family: sans-serif
+          font-size: 14px
+        .line
+          margin-top: 20px
+          margin-left: 40%
+          height: 2px
+          width: 20%
+          background-color: white
+        &:hover
+          h2, p
+            color: $gold-color
+            transition: all 0.25s ease-out 0s
+          .line
+            background-color: $gold-color
+            transition: all 0.25s ease-out 0s
+  section.recent
+    padding-top: 60px
+    padding-bottom: 60px
+    .row.mainText
+      h3
+        padding-bottom: 20px
+        text-align: center
+        color: black
+        font-weight: 400
+        font-size: 30px
+    .row.mainWord
+      color: #8c8c8c
+      padding-bottom: 30px
+      text-align: center
+      font-size: 18px
+      font-family: sans-serif
+    .col-sm-auto.block
+      position: relative
+      .opa
+        img
+          width: 350px
+        .data
+          position: absolute
+          top: 20px
+          left: 40px //Убрать
+          .num
+            h4
+              font-size: 30px
+            padding: 8px 10px 8px 10px
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+            background-color: #363636
+            border-top-radius: 5px
+            color: white
+          .month
+            p
+              padding-bottom: 2px
+
+            text-align: center
+            margin-top: -10px
+            background-color: #252525
+            color: white
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+      .description
+        background-color: #fbfaf8
+        padding-left: 20px
+        padding-top: 15px
+        padding-bottom: 15px
+        h3
+          font-size: 24px
+          font-family: Monaco, sans-serif
+        p
+          font-size: 16px
+          width: 300px
+        a
+          font-size: 15px
+          color: $gold-color
+          text-decoration: none
+          padding-right: 10px
+          position: relative
+          &:after
+            top: 4px
+            left: 80px
+            display: block
+            position: absolute
+            content: ''
+            border: 6px solid transparent
+            border-left: 6px solid $gold-color
+      &:hover
+        cursor: pointer
+        .data
+          .num
+            transition: all 0.5s ease-out 0s
+            background-color: #c7b299
+          .month
+            transition: all 0.5s ease-out 0s
+            background-color: #a48d72
+            
+        .opa
+          background-color: #000
+          img
+            opacity: 0.5
+            transition: all 0.5s ease-out 0s
+        .description
+          background-color: #362f2d
+          color: white
+          transition: all 0.5s ease-out 0s
+          h3
+            color: $gold-color
+          &:before
+            border-bottom-color: #362f2d
+            transition: all 0.15s ease-out 0s
+
+  section.partners
+    padding-top: 80px
+    padding-bottom: 80px
+    background: linear-gradient(rgba(0,0,0,0.5)), url(../img/partners.png) no-repeat
+    width: 100vw
+    background-size: cover
+    .logo1, .logo2, .logo3, .logo4
+      padding-right: 40px
+    .logo1, .logo3, .logo4
+      margin-top: 40px
+
+  section.about
+    padding-top: 40px
+    padding-bottom: 40px
+    background-color: #191919
+    width: 100vw
+    .image-logo
+      padding-bottom: 20px
+      img
+        height: 45px
+        width: 45px
+      span
+        color: white
+        font-size: 20px
+    .text
+      color: #555555
+      font-size: 15px
+    .recentPosts
+      h5
+        color: white
+      .block
+        .date
+          font-size: 14px
+          color: #333
+        .description
+          font-size: 15px
+          color: #555
+          &:after
+            margin-top: 5px
+            content: ''
+            display: block
+            height: 1px
+            background-color: #222
+            width: 100%
+        &:hover
+          cursor: pointer
+          .date
+            color: white
+            transition: all 0.15s ease-out 0s
+          .description
+            color: $gold-color
+            transition: all 0.15s ease-out 0s
+    .ourTwitter
+      h5
+        color: white
+      .block
+        .description
+          font-size: 15px
+          color: #555
+          span
+            color: #00bff3
+        .time
+          color: #444
+          &:after
+            margin-top: 2px
+            content: ''
+            display: block
+            height: 1px
+            background-color: #222
+            width: 100%
+        &:hover
+          .time
+            &:after
+              background-color: #777
+              transition: all 0.15s ease-out 0s
+  footer
+    width: 100vw
+    color: #555
+    background-color: black
+    .copyright
+      font-size: 13px
+      span
+        color: $gold-color
+    .navFoot
+      ul
+        li
+          cursor: pointer
+          color: #555
+          font-size: 12px
+          display: inline-block
+          list-style-type: none
+          &:hover
+            color: #999
+            transition: all 0.15s ease-out 0s
+          &:after
+            content: '|'
+            padding: 0px 4px 0px 4px
+          &:last-child
+            &:after
+              content: ''
+    .whoDesign
+      ul
+        li
+          color: #555
+          font-size: 12px
+          display: inline-block
+          list-style-type: none
+          span
+            color: #999
+          &:after
+            content: '|'
+            padding: 0px 4px 0px 7px
+          &:last-child
+            &:after
+              content: ''
+
+
+
+
+
+
+

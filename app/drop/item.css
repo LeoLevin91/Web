@@ -1,0 +1,57 @@
+.bodyy
+  background-color: rgb(53, 53, 53)
+  .item
+    padding-top: 10%  //Убрать
+    padding-left: 25% //Убрать
+    .block
+      position: relative
+      i
+        color: white
+        display: none
+        position: absolute
+        top: 110px
+      .search
+          left: 160px
+      .link
+          left: 192px
+      img
+        width: 370px
+        height: 237px
+      .descriptions
+        position: relative
+        height: 100px
+        background-color: #fbfaf8
+        h5
+          padding-top: 15px
+          margin-left: 10%
+          color: $gold-color
+          font-family: "Apple Color Emoji", sans-serif
+
+        p
+          margin-left: 10%
+          color: #8c8c8c
+          font-family: sans-serif
+
+        &:before
+          content: ''
+          position: absolute
+          left: 40px
+          top: -30px
+          border: 15px solid transparent
+          border-bottom: 15px solid #fbfaf8
+      &:hover
+        img
+          opacity: 0.5
+          transition: all 0.25s ease-out 0s
+        i
+          display: block
+          transition: all 0.25s ease-out 0s
+          &:hover
+            color: $gold-color
+        .descriptions
+          background-color: #362f2d
+          transition: all 0.25s ease-out 0s
+          &:before
+            border-bottom-color: #362f2d
+            transition: all 0.15s ease-out 0s
+          
